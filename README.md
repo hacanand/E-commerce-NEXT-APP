@@ -12,7 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Admin Panel
 
-![image](https://user-images.githubusercontent.com/90745903/219390994-b41355cf-fa34-44c0-89b3-4e48dbaf0efb.png)
+ 
 
 # User List
 ![image](https://user-images.githubusercontent.com/90745903/219391048-769c79d1-338f-45d4-a65c-01194b94615a.png)
@@ -51,11 +51,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+npm install 
+
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
+```
+create a .env file in the root directory and add the following code
+```bash
+DB_URI=your_mongoDB_URI
+JWT_SECRET=your_jwt_secret
+
+```
+test user credentials
+```bash
+name:abc
+email:admin@gmail.com
+password:12345678
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -68,18 +83,4 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# E-commerce-NEXT-APP
+ 
