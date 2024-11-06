@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Sidebar_com from './components/Sidebar_com';
 import Profile from './components/Profile';
-
+import User from '@/models/User';
 export default function dashboard() {
 
   // storing token in variable token 
@@ -22,7 +22,7 @@ export default function dashboard() {
       const data = JSON.parse(user);
       if (data.isAdmin === false) {
         toast.error('You are not allowed to access this page');
-        Router.push('/frontend/home');
+        Router.push('/frontend/landing');
       }
     }
     

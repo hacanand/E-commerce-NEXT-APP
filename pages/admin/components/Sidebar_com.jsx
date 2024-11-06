@@ -8,6 +8,7 @@ import { CiLogout } from 'react-icons/ci'
 import { CiDeliveryTruck } from 'react-icons/ci'
 import Router from 'next/router'
 import Cookies from 'js-cookie'
+import { toast } from 'react-toastify'
 
 
 export default function Sidebar_com() {
@@ -32,7 +33,7 @@ export default function Sidebar_com() {
             const data = JSON.parse(user);
             if (data.isAdmin === false) {
                 toast.error('You are not allowed to access this page');
-                Router.push('/frontend/home');
+                Router.push('/frontend/landing');
             }
         }
 
