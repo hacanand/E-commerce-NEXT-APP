@@ -44,9 +44,6 @@ export default function Navbar({pos}) {
             })
         }
     }, [scrolled])
-
-
-
     return (
         <div className={` ${scrolled ? "bg-slate-900" : "bg-transparent"} z-50  w-full h-24  text-white flex justify-around ${pos} top-0 left-0`}>
             <div className=' h-full  flex items-center justify-start px-4'>

@@ -44,7 +44,7 @@ export default function register() {
                     <div className="mt-10">
                         <form onSubmit={handleSubmit} encType="application/json" >
                             <div className="flex flex-col mb-6">
-                                <label htmlFor="name" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">E-Mail Address:</label>
+                                <label htmlFor="name" className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Name:</label>
                                 <div className="relative">
                                     <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                         <FaUserAlt />

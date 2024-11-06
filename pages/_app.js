@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <NextNProgress color="orange" height={7} showOnShallow={true} />
+      <NextNProgress color="orange" height={5} showOnShallow={true} />
       <Component {...pageProps} />
     </Provider>
   )
